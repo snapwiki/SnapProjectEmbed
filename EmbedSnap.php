@@ -61,7 +61,7 @@ class EmbedSnap{
 			$height = $argv['height'];
 		}
 		if (!empty($project)) {
-			if (!empty($project)) {
+			if (!empty($user)) {
 			return (
 				"<div style=\"max-width:{$width}px\">"
 				. "<div style=\"position:relative;padding-top:"
