@@ -1,26 +1,22 @@
 {
-	"name": "SnapProjectEmbed",
-	"version": "1.0.0",
-	"author": [
-		"R4356th, mw-EmbedScratch contributors"
-	],
-	"url": "https://github.com/R4356th/Snap-project-embed",
-	"descriptionmsg": "embedsnap-desc",
-	"license-name": "GPLv3",
-	"type": "parserhook",
-	"namespaces": [],
-	"AutoloadClasses": {
-		"EmbedSnap": "EmbedSnap.php"
-	},
-	"ContentHandlers": {},
-	"ExtensionMessagesFiles": {},
-	"Hooks": {
-		"ParserFirstCallInit": ["EmbedSnap::parserEmbedSnap"]
-	},
-	"MessagesDirs": {
-		"EmbedSnap": [
-			"i18n"
-		]
-	},
-	"manifest_version": 1
+  "name": "SnapProjectEmbed",
+  "version": "1.0.0",
+  "author": ["R4356th, mw-EmbedScratch contributors"],
+  "url": "https://github.com/R4356th/Snap-project-embed",
+  "descriptionmsg": "embedsnap-desc",
+  "license-name": "GPLv3",
+  "type": "parserhook",
+  "namespaces": [],
+  "AutoloadClasses": {
+    "EmbedSnap": "EmbedSnap.php"
+  },
+  "ContentHandlers": {},
+  "ExtensionMessagesFiles": {},
+  "Hooks": {
+    "ParserFirstCallInit": ["EmbedSnap::parserEmbedSnap"]
+  },
+  "MessagesDirs": {
+    "EmbedSnap": ["i18n"]
+  },
+  "manifest_version": 1
 }
