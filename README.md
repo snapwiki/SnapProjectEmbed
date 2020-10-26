@@ -1,6 +1,6 @@
 # Snap! Project Embed
 
-MediaWiki extension for embedding Snap! projects
+A MediaWiki extension for embedding Snap! projects
 
 # Usage
 
@@ -28,3 +28,21 @@ wfLoadExtension('SnapProjectEmbed');
 # Credits
 
 A big thank you to @GrahamSH for all his help and mw-embedScratch contributors which was our design inspiration.
+
+# Legal 
+SnapProjectEmbed - A MediaWiki extension that allows embedding Snap*!* projects.
+
+Copyright (C) 2020 R4356th
+  
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
