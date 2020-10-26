@@ -11,7 +11,7 @@ Loading a project with custom width and height:
 
 # Installation
 
-1. Clone this repository with Git using the following command:
+1. Clone this repository with Git into your "Extensions" folder using the following command:
 
 ```Bash
 git clone https://github.com/snapwiki/SnapProjectEmbed.git
@@ -31,7 +31,7 @@ A big thank you to @GrahamSH for all his help and mw-embedScratch contributors w
 
 # Legal
 
-SnapProjectEmbed - A MediaWiki extension that allows embedding Snap*!* projects.
+SnapProjectEmbed - A MediaWiki extension that allows embedding Snap! projects.
 
 Copyright (C) 2020 R4356th
 
