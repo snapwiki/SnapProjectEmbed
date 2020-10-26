@@ -60,7 +60,8 @@ class EmbedSnap{
 		{
 			$height = $argv['height'];
 		}
-		if (!empty($project $user)) {
+		if (!empty($project)) {
+			if (!empty($project)) {
 			return (
 				"<div style=\"max-width:{$width}px\">"
 				. "<div style=\"position:relative;padding-top:"
@@ -77,6 +78,9 @@ class EmbedSnap{
 				. "</iframe>"
 				. "</div></div>"
 			);
+			} else {
+				return "";
+			}
 		} else {
 			return "";
 		}
