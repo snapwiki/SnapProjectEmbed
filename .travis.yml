@@ -1,9 +1,7 @@
-  
 language: php
 php:
   - 7.2
   - 7.1
   - 7.0
 
-script: 
-  php EmbedSnap.php
+script: php EmbedSnap.php
