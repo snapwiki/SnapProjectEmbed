@@ -79,10 +79,10 @@ class EmbedSnap{
 				. "</div></div>"
 			);
 			} else {
-				return "";
+				return "<p style="color:red;">Error: Username Missing</p>";
 			}
 		} else {
-			return "";
+			return "<p style="color:red;">Error: Project Name Missing</p>";
 		}
 	}
 }
