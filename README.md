@@ -7,7 +7,7 @@ A MediaWiki extension for embedding Snap! projects
 
 # Usage
 
-Loading a project default width and height:
+Loading a project with default width and height:
 `<snap project="project-name" user="user">`
 Loading a project with custom width and height:
 `<snap project="project-name" user="user" width="width" height="height">`
