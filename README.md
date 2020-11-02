@@ -11,13 +11,15 @@ Loading a project with default width and height:
 `<snap project="project-name" user="user" />`
 Loading a project with custom width and height:
 `<snap project="project-name" user="user" width="width" height="height" />`
+
 # Filesystem
-``` bash
+
+```bash
 .
 └── 📂 1 # Folder with major version as the name
-    └── 📜 1.0.json # Schema with both major and minor version as the name 
+    └── 📜 1.0.json # Schema with both major and minor version as the name
 ```
-    
+
 # Installation
 
 1. Clone this repository with Git into your "Extensions" folder using the following command:
