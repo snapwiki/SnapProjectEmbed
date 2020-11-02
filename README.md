@@ -16,8 +16,10 @@ Loading a project with custom width and height:
 
 ```bash
 .
-└── 📂 1 # Folder with major version as the name
-    └── 📜 1.0.json # Schema with both major and minor version as the name
+└── 📂 i18n # Translations for extension
+    └── 📜 en.json # English translations and strings
+└── 📜 extension.json # Extension manifest
+└── 📜 EmbedSnap.php # Main extension parser
 ```
 
 # Installation
