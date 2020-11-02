@@ -20,19 +20,19 @@
 if (!defined('MEDIAWIKI')) {
     die();
 }
-class EmbedSnap{
+class EmbedSnap{ 
 	public static function parserEmbedSnap (&$parser) {
-	    $parser->setHook('snap', array(__CLASS__,'renderEmbedSnap'));
+	    $parser->setHook('snap', array(__CLASS__,'renderEmbedSnap')); // Hook for the <snap> tags
 	    return true;
 	}
 	
-	function renderEmbedSnap ($input, $argv, $parser) {
+	function renderEmbedSnap ($input, $argv, $parser) { // Function to render the iframes for the <snap> tags
 		$project = '';
 		$user = '';
 		$width = $width_max = 930;
 		$height = $height_max = 600;
 	
-		if ( !empty( $argv['project'])) {
+		if ( !empty( $argv['project'])) { // Arguments passed to the parser
 			$project=$argv['project'];
 		} elseif (!empty($input)){
 			$project=$input;
@@ -42,13 +42,13 @@ class EmbedSnap{
 		} elseif (!empty($input)) {
 			$user = $input;
 		}
-		$project = htmlspecialchars($project, ENT_QUOTES);
+		$project = htmlspecialchars($project, ENT_QUOTES); // Cleaning up inputs
 		$user = htmlspecialchars($user, ENT_QUOTES);
 		if (
 			!empty( $argv['width'] ) &&
 			settype( $argv['width'], 'integer' ) &&
 			( $width_max >= $argv['width'] )
-		)
+		) // Logic to deal with height and width
 		{
 			$width = $argv['width'];
 		}
@@ -60,9 +60,9 @@ class EmbedSnap{
 		{
 			$height = $argv['height'];
 		}
-		if (!empty($project)) {
-			if (!empty($user)) {
-			return (
+		if (!empty($project)) { // If the project value is empty, then it can't render. It renders an error.
+			if (!empty($user)) { // Also, if the user is empty it can't render. It also renders an error. 
+			return ( // If both work, it renders the proper iframe.
 				"<div style=\"max-width:{$width}px\">"
 				. "<div style=\"position:relative;padding-top:"
 				. $height / $width * 100
