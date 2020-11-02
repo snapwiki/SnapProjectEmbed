@@ -80,11 +80,11 @@ class EmbedSnap{
 			);
 			} else {
 				// If the user value is empty it can't render the iframe and returns an error instead. 
-				return '<p style="color:red;">Error: Username Missing</p>'; 
+				return $lang->getMessage( 'error-username' );
 			}
 		} else {
 			// If the project value is empty, then it also can't render the iframe and returns an error instead.
-			return '<p style="color:red;">Error: Project Name Missing</p>'; 
+			return $lang->getMessage( 'error-project' ); 
 		}
 	}
 }
