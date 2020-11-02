@@ -14,7 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
     
-    Embedding Snap! projects in MediaWiki using <snap> Tag
+    Embedding Snap! projects in MediaWiki using <snap> tag
 */
 
 if (!defined('MEDIAWIKI')) {
@@ -60,9 +60,9 @@ class EmbedSnap{
 		{
 			$height = $argv['height'];
 		}
-		if (!empty($project)) { // If the project value is empty, then it can't render. It renders an error.
-			if (!empty($user)) { // Also, if the user is empty it can't render. It also renders an error. 
-			return ( // If both work, it renders the proper iframe.
+		if (!empty($project)) { 
+			if (!empty($user)) { 
+			return ( // If both user and project values are given, it renders the proper iframe.
 				"<div style=\"max-width:{$width}px\">"
 				. "<div style=\"position:relative;padding-top:"
 				. $height / $width * 100
@@ -79,10 +79,12 @@ class EmbedSnap{
 				. "</div></div>"
 			);
 			} else {
-				return '<p style="color:red;">Error: Username Missing</p>';
+				// If the user value is empty it can't render the iframe and returns an error instead. 
+				return '<p style="color:red;">Error: Username Missing</p>'; 
 			}
 		} else {
-			return '<p style="color:red;">Error: Project Name Missing</p>';
+			// If the project value is empty, then it also can't render the iframe and returns an error instead.
+			return '<p style="color:red;">Error: Project Name Missing</p>'; 
 		}
 	}
 }
