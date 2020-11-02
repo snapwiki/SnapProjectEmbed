@@ -72,7 +72,7 @@ class EmbedSnap{
 				. "allow = \"geolocation; microphone; camera\" "
 				. "frameborder=\"0\" "
 				. "allowtransparency=\"true\" "
-				. "width=\"100%\" height=\"100%\" "
+				. "width=\"480\" height=\"390\" "
 				. "src=\"https://snap.berkeley.edu/embed?project={$project}&user={$user}&showTitle=true&showAuthor=true&editButton=true&pauseButton=true\" "
 				. ">"
 				. "</iframe>"
