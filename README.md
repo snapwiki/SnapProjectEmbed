@@ -12,6 +12,16 @@ Loading a project with default width and height:
 Loading a project with custom width and height:
 `<snap project="project-name" user="user" width="width" height="height" />`
 
+# Filesystem
+
+```bash
+.
+└── 📂 i18n # Translations for extension
+    └── 📜 en.json # English translations and strings
+└── 📜 extension.json # Extension manifest
+└── 📜 EmbedSnap.php # Main extension parser
+```
+
 # Installation
 
 1. Clone this repository with Git into your "Extensions" folder using the following command:
