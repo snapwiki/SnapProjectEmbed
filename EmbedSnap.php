@@ -64,7 +64,7 @@ class EmbedSnap{
 			if (!empty($user)) { 
 			return ( // If both user and project values are given, it renders the proper iframe.
 				"<div style=\"max-width:{$width}px\">"
-				. "<div style=\"position:relative;"
+				. "<div>"
 				. "<iframe "
 				. "allowfullscreen "
 				. "allow = \"geolocation; microphone; camera\" "
