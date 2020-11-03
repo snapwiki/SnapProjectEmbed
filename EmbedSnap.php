@@ -52,6 +52,9 @@ class EmbedSnap{
 		{
 			$width = $argv['width'];
 		}
+		else {
+			$width = 480;
+		}
 		if (
 			!empty( $argv['height'] ) &&
 			settype( $argv['height'], 'integer' ) &&
@@ -59,6 +62,9 @@ class EmbedSnap{
 		)
 		{
 			$height = $argv['height'];
+		}
+		else {
+			$height = 390;
 		}
 		if (!empty($project)) { 
 			if (!empty($user)) { 
@@ -70,7 +76,7 @@ class EmbedSnap{
 				. "allow = \"geolocation; microphone; camera\" "
 				. "frameborder=\"0\" "
 				. "allowtransparency=\"true\" "
-				. "width=\"480\" height=\"390\" "
+				. "width=\"{$width}\" height=\"{$height}\" "
 				. "src=\"https://snap.berkeley.edu/embed?project={$project}&user={$user}&showTitle=true&showAuthor=true&editButton=true&pauseButton=true\" "
 				. ">"
 				. "</iframe>"
