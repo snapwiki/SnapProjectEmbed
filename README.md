@@ -17,7 +17,8 @@ Loading a project with custom width and height:
 ```bash
 .
 └── 📂 i18n # Translations for extension
-    └── 📜 en.json # English translations and strings
+    └── 📜 en.json # English translation and strings
+    └── 📜 bn.json # Bengali translation and strings
 └── 📜 extension.json # Extension manifest
 └── 📜 EmbedSnap.php # Main extension parser
 ```
