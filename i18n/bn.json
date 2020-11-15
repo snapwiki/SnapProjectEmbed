@@ -2,7 +2,7 @@
   "@metadata": {
     "author": "R4356th, GrahamSH, mw-embedScratch contributors"
   },
-  "embedsnap-desc": "এম্বেড স্ন্যাপ! প্রকল্প",
+  "embedsnap-desc": "Snap! প্রকল্প এম্বেড",
   "error-project": "<p style=\"color:red;\">ত্রুটি: প্রকল্পের নাম অনুপস্থিত</p>",
   "error-username": "<p style=\"color:red;\">ত্রুটি: ব্যবহারকারীর নাম অনুপস্থিত</p>"
 }
