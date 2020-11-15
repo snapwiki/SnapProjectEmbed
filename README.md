@@ -1,3 +1,6 @@
+# v2 
+This is the next version of this extension. It will eventually be merged into master.
+---
 [![Build Status](https://img.shields.io/github/workflow/status/snapwiki/SnapProjectEmbed/Check%20PHP?style=flat-square)](https://github.com/snapwiki/SnapProjectEmbed/actions)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
