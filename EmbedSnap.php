@@ -69,7 +69,7 @@ class EmbedSnap{
 		if (!empty($project)) { 
 			if (!empty($user)) { 
 			return ( // If both user and project values are given, it renders the proper iframe.
-				"<div style=\"max-width:{$width}px\">"
+				"<div class=\"snap-project\" style=\"max-width:{$width}px\">"
 				. "<div>"
 				. "<iframe "
 				. "allowfullscreen "
