@@ -52,6 +52,8 @@ class EmbedSnap{
 
 		$project = htmlspecialchars($project, ENT_QUOTES); // Cleaning up inputs
 		$user = htmlspecialchars($user, ENT_QUOTES);
+		$edit = htmlspecialchars($edit, ENT_QUOTES);
+
 		if (
 			!empty( $argv['width'] ) &&
 			settype( $argv['width'], 'integer' ) &&
