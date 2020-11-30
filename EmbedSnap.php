@@ -1,6 +1,6 @@
 <?php
 /*
-    Copyright (C) 2020 R4356th
+    Copyright (C) 2020 SnapWiki
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -42,6 +42,14 @@ class EmbedSnap{
 		} elseif (!empty($input)) {
 			$user = $input;
 		}
+		if ( !empty( $argv['edit'])) {
+			$user = $argv['edit'];
+		} elseif (!empty($input)) {
+			$edit = $input;
+		} else {
+			$edit = 'true' 
+		}
+
 		$project = htmlspecialchars($project, ENT_QUOTES); // Cleaning up inputs
 		$user = htmlspecialchars($user, ENT_QUOTES);
 		if (
