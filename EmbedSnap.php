@@ -85,7 +85,7 @@ class EmbedSnap{
 				. "frameborder=\"0\" "
 				. "allowtransparency=\"true\" "
 				. "width=\"{$width}\" height=\"{$height}\" "
-				. "src=\"https://snap.berkeley.edu/embed?project={$project}&user={$user}&showTitle=true&showAuthor=true&editButton=true&pauseButton=true\" "
+				. "src=\"https://snap.berkeley.edu/embed?project={$project}&user={$user}&showTitle=true&showAuthor=true&editButton={$edit}&pauseButton=true\" "
 				. ">"
 				. "</iframe>"
 				. "</div></div>"
