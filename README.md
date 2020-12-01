@@ -47,13 +47,13 @@ wfLoadExtension('SnapProjectEmbed');
 
 # Credits
 
-A big thank you to @GrahamSH for all his help and mw-embedScratch contributors which was our design inspiration.
+A big thank you to mw-embedScratch contributors which was our design inspiration.
 
 # Legal
 
 SnapProjectEmbed - A MediaWiki extension that allows embedding Snap! projects.
 
-Copyright (C) 2020 R4356th
+Copyright (C) 2020 R4356th and GrahamSH
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
