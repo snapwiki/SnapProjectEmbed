@@ -47,7 +47,7 @@ class EmbedSnap{
 		} elseif (!empty($input)) {
 			$edit = $input;
 		} else {
-			$edit = 'true' 
+			$edit = 'true'; 
 		}
 
 		$project = htmlspecialchars($project, ENT_QUOTES); // Cleaning up inputs
