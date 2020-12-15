@@ -33,6 +33,7 @@ class EmbedSnap{
 		$user = '';
 		$width = $width_max = 930;
 		$height = $height_max = 600;
+		$edit = '';
 	
 		if ( !empty( $argv['project'])) { // Arguments passed to the parser
 			$project=$argv['project'];
