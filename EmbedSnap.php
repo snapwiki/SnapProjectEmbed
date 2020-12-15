@@ -21,8 +21,10 @@ if (!defined('MEDIAWIKI')) {
     die();
 }
 class EmbedSnap{ 
+	// Register <snap> and <snap-project> tags
 	public static function parserEmbedSnap (&$parser) {
-	    $parser->setHook('snap', array(__CLASS__,'renderEmbedSnap')); // Hook for the <snap> tags
+	    $parser->setHook('snap', array(__CLASS__,'renderEmbedSnap'));
+	    $parser->setHook('snap-project', array(__CLASS__,'renderEmbedSnap'));
 	    return true;
 	}
 	

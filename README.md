@@ -16,6 +16,10 @@ Loading a project with default width and height:
 Loading a project with custom width and height:
 `<snap project="project-name" user="user" width="width" height="height" />`
 
+You can also use the extension like this- `<snap project="project-name" user="user"></snap>`.
+
+Additionally, instead of using the `<snap>` tag, you can also use the `<snap-project>` tag.
+
 # Filesystem
 
 ```bash
