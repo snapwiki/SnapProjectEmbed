@@ -40,7 +40,7 @@ git clone https://github.com/snapwiki/SnapProjectEmbed.git
 2. Update LocalSettings.php to add the following line:
 
 ```PHP
-wfLoadExtension('SnapProjectEmbed');
+wfLoadExtension( 'SnapProjectEmbed' );
 ```
 
 3. Go to Special:Version in your wiki and look at the "Installed extensions" section. It should now list SnapProjectEmbed and its version, license and contributors.
