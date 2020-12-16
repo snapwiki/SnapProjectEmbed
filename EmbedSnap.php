@@ -46,7 +46,7 @@ class EmbedSnap{
 			$user = $input;
 		}
 		if ( !empty( $argv['edit'])) {
-			$user = $argv['edit'];
+			$edit = $argv['edit'];
 		} elseif (!empty($input)) {
 			$edit = $input;
 		} else {
