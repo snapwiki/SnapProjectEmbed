@@ -34,6 +34,7 @@ class EmbedSnap{
 		$width = $width_max = 930;
 		$height = $height_max = 600;
 		$edit = '';
+		$taa = '';
 	
 		if ( !empty( $argv['project'])) { // Arguments passed to the parser
 			$project=$argv['project'];
@@ -52,16 +53,26 @@ class EmbedSnap{
 		} else {
 			$edit = 'true'; 
 		}
-
-		$project = htmlspecialchars($project, ENT_QUOTES); // Cleaning up inputs
+		if ( !empty( $argv['taa'])) {
+			$taa = $argv['taa'];
+		} elseif (!empty($input)) {
+			$taa = $input;
+		} else {
+			$taa = 'true'; 
+		}
+		
+                // Cleaning up inputs
+		$project = htmlspecialchars($project, ENT_QUOTES); 
 		$user = htmlspecialchars($user, ENT_QUOTES);
 		$edit = htmlspecialchars($edit, ENT_QUOTES);
-
+		$taa = htmlspecialchars($taa, ENT_QUOTES);
+                
+		// Logic to deal with height and width
 		if (
 			!empty( $argv['width'] ) &&
 			settype( $argv['width'], 'integer' ) &&
 			( $width_max >= $argv['width'] )
-		) // Logic to deal with height and width
+		) 
 		{
 			$width = $argv['width'];
 		}
@@ -90,7 +101,7 @@ class EmbedSnap{
 				. "frameborder=\"0\" "
 				. "allowtransparency=\"true\" "
 				. "width=\"{$width}\" height=\"{$height}\" "
-				. "src=\"https://snap.berkeley.edu/embed?project={$project}&user={$user}&showTitle=true&showAuthor=true&editButton={$edit}&pauseButton=true\" "
+				. "src=\"https://snap.berkeley.edu/embed?project={$project}&user={$user}&showTitle={$taa}&showAuthor={$taa}&editButton={$edit}&pauseButton=true\" "
 				. ">"
 				. "</iframe>"
 				. "</div></div>"
