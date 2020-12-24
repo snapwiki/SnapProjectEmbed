@@ -28,7 +28,7 @@ class EmbedSnap{
 	    return true;
 	}
 	
-	static function renderEmbedSnap ($input, $argv, $parser) { // Function to render the iframes for the <snap> tags
+	public static function renderEmbedSnap ($input, $argv, $parser) { // Function to render the iframes for the <snap> tags
 		$project = '';
 		$user = '';
 		$width = $width_max = 930;
