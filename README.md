@@ -1,7 +1,3 @@
-# v2
-
-#### This is the next version of this extension. It will eventually be merged into `main`.
-
 [![Build Status](https://img.shields.io/github/workflow/status/snapwiki/SnapProjectEmbed/Check%20PHP?style=flat-square)](https://github.com/snapwiki/SnapProjectEmbed/actions)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
@@ -71,3 +67,9 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+# Older Versions
+
+The current version of Snap! Project Embed is 2.0.0. If you would like to use an older version, please switch to its respective branch-
+
+1.1.0: v1.1
