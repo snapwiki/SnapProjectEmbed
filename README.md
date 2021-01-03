@@ -7,14 +7,19 @@ A MediaWiki extension for embedding Snap! projects
 
 # Usage
 
-Loading a project with default width and height:
+* Loading a project with Snap<i>!</i>'s default width and height:
 `<snap project="project-name" user="user" />`
-Loading a project with custom width and height:
-`<snap project="project-name" user="user" width="width" height="height" />`
 
-You can also use the extension like this- `<snap project="project-name" user="user"></snap>`.
+* Loading a project with custom width and height:
+* `<snap project="project-name" user="user" width="width" height="height" />`
+* Loading a project without showing the title and author of the project (defaults to true):
+`<snap project="project-name" user="user" width="width" taa="false" />`
+* Loading a project without the edit button (defaults to true):
+`<snap project="project-name" user="user" pause="false" />`
+* Loading a project without the pause button (defaults to true):
+`<snap project="project-name" user="user" pause="false" />`
 
-Additionally, instead of using the `<snap>` tag, you can also use the `<snap-project>` tag.
+You can also use the extension like this- `<snap project="project-name" user="user"></snap>`. Additionally, instead of using the `<snap>` tag, you can also use the `<snap-project>` tag.
 
 # Filesystem
 
