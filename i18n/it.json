@@ -1,6 +1,6 @@
 {
   "@metadata": {
-    "author": "R4356th, GrahamSH, contributors di mw-embedScratch"
+    "author": "RubenVerg"
   },
   "embedsnap-desc": "Inserisci progetti Snap!",
   "error-project": "<p style=\"color:red;\">Errore: Manca il nome del progetto</p>",

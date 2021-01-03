@@ -7,10 +7,19 @@ A MediaWiki extension for embedding Snap! projects
 
 # Usage
 
-Loading a project with default width and height:
-`<snap project="project-name" user="user" />`
-Loading a project with custom width and height:
-`<snap project="project-name" user="user" width="width" height="height" />`
+- Loading a project with Snap<i>!</i>'s default width and height:
+  `<snap project="project-name" user="user" />`
+
+- Loading a project with custom width and height:
+- `<snap project="project-name" user="user" width="width" height="height" />`
+- Loading a project without showing the title and author of the project (defaults to true):
+  `<snap project="project-name" user="user" width="width" taa="false" />`
+- Loading a project without the edit button (defaults to true):
+  `<snap project="project-name" user="user" pause="false" />`
+- Loading a project without the pause button (defaults to true):
+  `<snap project="project-name" user="user" pause="false" />`
+
+You can also use the extension like this- `<snap project="project-name" user="user"></snap>`. Additionally, instead of using the `<snap>` tag, you can also use the `<snap-project>` tag.
 
 # Filesystem
 
@@ -36,20 +45,20 @@ git clone https://github.com/snapwiki/SnapProjectEmbed.git
 2. Update LocalSettings.php to add the following line:
 
 ```PHP
-wfLoadExtension('SnapProjectEmbed');
+wfLoadExtension( 'SnapProjectEmbed' );
 ```
 
 3. Go to Special:Version in your wiki and look at the "Installed extensions" section. It should now list SnapProjectEmbed and its version, license and contributors.
 
 # Credits
 
-A big thank you to @GrahamSH for all his help and mw-embedScratch contributors which was our design inspiration.
+A big thank you to mw-embedScratch contributors which was our design inspiration.
 
 # Legal
 
 SnapProjectEmbed - A MediaWiki extension that allows embedding Snap! projects.
 
-Copyright (C) 2020 R4356th
+Copyright (C) 2020 R4356th and GrahamSH
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -63,3 +72,9 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+# Older Versions
+
+The current version of Snap! Project Embed is 2.0.0. If you would like to use an older version, please switch to its respective branch-
+
+1.1.0: v1.1

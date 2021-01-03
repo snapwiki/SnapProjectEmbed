@@ -1,0 +1,8 @@
+{
+  "@metadata": {
+    "author": "R4356th, GrahamSH"
+  },
+  "embedsnap-desc": "Description of this extension",
+  "error-project": "Error message stating that there is no project value",
+  "error-username": "Error message stating that there is no username value"
+}

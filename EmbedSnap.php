@@ -1,6 +1,6 @@
 <?php
 /*
-    Copyright (C) 2020 R4356th
+    Copyright (C) 2020 R4356th and GrahamSH
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -21,16 +21,21 @@ if (!defined('MEDIAWIKI')) {
     die();
 }
 class EmbedSnap{ 
+	// Register <snap> and <snap-project> tags
 	public static function parserEmbedSnap (&$parser) {
-	    $parser->setHook('snap', array(__CLASS__,'renderEmbedSnap')); // Hook for the <snap> tags
+	    $parser->setHook('snap', array(__CLASS__,'renderEmbedSnap'));
+	    $parser->setHook('snap-project', array(__CLASS__,'renderEmbedSnap'));
 	    return true;
 	}
 	
-	static function renderEmbedSnap ($input, $argv, $parser) { // Function to render the iframes for the <snap> tags
+	public static function renderEmbedSnap ($input, $argv, $parser) { // Function to render the iframes for the <snap> tags
 		$project = '';
 		$user = '';
 		$width = $width_max = 930;
 		$height = $height_max = 600;
+		$edit = '';
+		$taa = '';
+		$pause = '';
 	
 		if ( !empty( $argv['project'])) { // Arguments passed to the parser
 			$project=$argv['project'];
@@ -42,13 +47,41 @@ class EmbedSnap{
 		} elseif (!empty($input)) {
 			$user = $input;
 		}
-		$project = htmlspecialchars($project, ENT_QUOTES); // Cleaning up inputs
+		if ( !empty( $argv['edit'])) {
+			$edit = $argv['edit'];
+		} elseif (!empty($input)) {
+			$edit = $input;
+		} else {
+			$edit = 'true'; 
+		}
+		if ( !empty( $argv['taa'])) {
+			$taa = $argv['taa'];
+		} elseif (!empty($input)) {
+			$taa = $input;
+		} else {
+			$taa = 'true'; 
+		}
+		if ( !empty( $argv['pause'])) {
+			$pause = $argv['pause'];
+		} elseif (!empty($input)) {
+			$pause = $input;
+		} else {
+			$pause = 'true'; 
+		}
+		
+                // Cleaning up inputs
+		$project = htmlspecialchars($project, ENT_QUOTES); 
 		$user = htmlspecialchars($user, ENT_QUOTES);
+		$edit = htmlspecialchars($edit, ENT_QUOTES);
+		$taa = htmlspecialchars($taa, ENT_QUOTES);
+		$pause = htmlspecialchars($pause, ENT_QUOTES);
+                
+		// Logic to deal with height and width
 		if (
 			!empty( $argv['width'] ) &&
 			settype( $argv['width'], 'integer' ) &&
 			( $width_max >= $argv['width'] )
-		) // Logic to deal with height and width
+		) 
 		{
 			$width = $argv['width'];
 		}
@@ -69,7 +102,7 @@ class EmbedSnap{
 		if (!empty($project)) { 
 			if (!empty($user)) { 
 			return ( // If both user and project values are given, it renders the proper iframe.
-				"<div style=\"max-width:{$width}px\">"
+				"<div class=\"snap-project\" style=\"max-width:{$width}px\">"
 				. "<div>"
 				. "<iframe "
 				. "allowfullscreen "
@@ -77,7 +110,7 @@ class EmbedSnap{
 				. "frameborder=\"0\" "
 				. "allowtransparency=\"true\" "
 				. "width=\"{$width}\" height=\"{$height}\" "
-				. "src=\"https://snap.berkeley.edu/embed?project={$project}&user={$user}&showTitle=true&showAuthor=true&editButton=true&pauseButton=true\" "
+				. "src=\"https://snap.berkeley.edu/embed?project={$project}&user={$user}&showTitle={$taa}&showAuthor={$taa}&editButton={$edit}&pauseButton={$pause}\" "
 				. ">"
 				. "</iframe>"
 				. "</div></div>"
