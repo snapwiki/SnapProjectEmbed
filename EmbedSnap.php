@@ -18,7 +18,7 @@
 */
 
 if (!defined('MEDIAWIKI')) {
-    die();
+    die( 'Snap! Project Embed requires MediaWiki 1.35 or later to run.' );
 }
 class EmbedSnap{ 
 	// Register <snap> and <snap-project> tags
