@@ -20,3 +20,5 @@ jobs:
         ini-values: post_max_size=256M, short_open_tag=On
         coverage: xdebug        
         tools: php-cs-fixer, phpunit
+    - name: Run EmbedSnap.php
+      run: php EmbedSnap.php
