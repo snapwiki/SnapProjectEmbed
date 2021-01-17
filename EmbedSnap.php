@@ -95,7 +95,7 @@ class EmbedSnap{
 
 		$elementtorender = Html::element( 'iframe', [
 			'class' => 'snap-project',
-            'allowfullscreen',
+                        'allowfullscreen',
 			'allow' => 'geolocation; microphone; camera',
 			'frameborder' => '0',
 			'allowtransparency' => 'true',
