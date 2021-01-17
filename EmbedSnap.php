@@ -68,13 +68,6 @@ class EmbedSnap{
 		} else {
 			$pause = 'true'; 
 		}
-		
-                // Cleaning up inputs
-		$project = htmlspecialchars($project, ENT_QUOTES); 
-		$user = htmlspecialchars($user, ENT_QUOTES);
-		$edit = htmlspecialchars($edit, ENT_QUOTES);
-		$taa = htmlspecialchars($taa, ENT_QUOTES);
-		$pause = htmlspecialchars($pause, ENT_QUOTES);
                 
 		// Logic to deal with height and width
 		if (
@@ -99,21 +92,21 @@ class EmbedSnap{
 		else {
 			$height = 390;
 		}
+
+		$elementtorender = Html::element( 'iframe', [
+			'class' => 'snap-project',
+            'allowfullscreen',
+			'allow' => 'geolocation; microphone; camera',
+			'frameborder' => '0',
+			'allowtransparency' => 'true',
+			'width' => $width,
+			'height' => $height,
+			'src' => 'https://snap.berkeley.edu/embed?project=' . $project . '&user=' . $user . '&showTitle=' . $taa . '&showAuthor=' . $taa . '&editButton=' . $edit . '&pauseButton=' . $pause,
+		]);
 		if (!empty($project)) { 
 			if (!empty($user)) { 
 			return ( // If both user and project values are given, it renders the proper iframe.
-				"<div class=\"snap-project\" style=\"max-width:{$width}px\">"
-				. "<div>"
-				. "<iframe "
-				. "allowfullscreen "
-				. "allow = \"geolocation; microphone; camera\" "
-				. "frameborder=\"0\" "
-				. "allowtransparency=\"true\" "
-				. "width=\"{$width}\" height=\"{$height}\" "
-				. "src=\"https://snap.berkeley.edu/embed?project={$project}&user={$user}&showTitle={$taa}&showAuthor={$taa}&editButton={$edit}&pauseButton={$pause}\" "
-				. ">"
-				. "</iframe>"
-				. "</div></div>"
+				$elementtorender
 			);
 			} else {
 				// If the user value is empty it can't render the iframe and returns an error instead. 
