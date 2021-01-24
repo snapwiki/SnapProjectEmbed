@@ -115,7 +115,7 @@ class EmbedSnap{
 		]);
 		
 		if ($hide == 'true') {
-			$elementtorender = Html::openElement('details') . Html::openElement('summary') . $iframe . Html::closeElement('summary') . Html::closeElement('details');
+			$elementtorender = Html::openElement('details') . Html::openElement('summary') . Html::closeElement('summary') . $iframe . Html::closeElement('details');
 		} elseif ( $hide == 'false') {
 			$elementtorender = $iframe;
 		}
