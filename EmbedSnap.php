@@ -36,6 +36,7 @@ class EmbedSnap{
 		$edit = '';
 		$taa = '';
 		$pause = '';
+		$hide = 'false';
 	
 		if ( !empty( $argv['project'])) { // Arguments passed to the parser
 			$project=$argv['project'];
@@ -68,6 +69,14 @@ class EmbedSnap{
 		} else {
 			$pause = 'true'; 
 		}
+		if ( !empty( $argv['hide'])) {
+			$hide = $argv['hide'];
+		} elseif ( !empty($input)) {
+			$hide = $input;
+		} else {
+			// Show the project by default
+			$hide = 'false';
+		}
                 
 		// Logic to deal with height and width
 		if (
@@ -92,8 +101,8 @@ class EmbedSnap{
 		else {
 			$height = 390;
 		}
-
-		$elementtorender = Html::element( 'iframe', [
+        
+		$iframe = Html::element( 'iframe', [
 			'class' => 'snap-project',
                         'allowfullscreen',
 			'allow' => 'geolocation; microphone; camera',
@@ -103,6 +112,12 @@ class EmbedSnap{
 			'height' => $height,
 			'src' => 'https://snap.berkeley.edu/embed?project=' . $project . '&user=' . $user . '&showTitle=' . $taa . '&showAuthor=' . $taa . '&editButton=' . $edit . '&pauseButton=' . $pause,
 		]);
+		
+		if ($hide = 'true') {
+			$elementtorender = Html::openElement('details') . Html::openElement('summary') . $iframe . Html::closeElement('summary') . Html::closeElement('details');
+		} elseif ( $hide = 'false') {
+			$elementtorender = $iframe;
+		}
 		if (!empty($project)) { 
 			if (!empty($user)) { 
 			return ( // If both user and project values are given, it renders the proper iframe.
