@@ -37,6 +37,7 @@ class EmbedSnap{
 		$taa = '';
 		$pause = '';
 		$hide = 'false';
+		$elementtorender = '';
 	
 		if ( !empty( $argv['project'])) { // Arguments passed to the parser
 			$project=$argv['project'];
