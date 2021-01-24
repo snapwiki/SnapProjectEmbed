@@ -113,9 +113,9 @@ class EmbedSnap{
 			'src' => 'https://snap.berkeley.edu/embed?project=' . $project . '&user=' . $user . '&showTitle=' . $taa . '&showAuthor=' . $taa . '&editButton=' . $edit . '&pauseButton=' . $pause,
 		]);
 		
-		if ($hide = 'true') {
+		if ($hide == 'true') {
 			$elementtorender = Html::openElement('details') . Html::openElement('summary') . $iframe . Html::closeElement('summary') . Html::closeElement('details');
-		} elseif ( $hide = 'false') {
+		} elseif ( $hide == 'false') {
 			$elementtorender = $iframe;
 		}
 		if (!empty($project)) { 
