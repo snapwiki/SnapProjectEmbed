@@ -8,7 +8,7 @@
   "type": "parserhook",
   "namespaces": [],
   "AutoloadClasses": {
-    "EmbedSnap": "EmbedSnap.php"
+    "EmbedSnap": "includes/EmbedSnap.php"
   },
   "ContentHandlers": {},
   "ExtensionMessagesFiles": {},
