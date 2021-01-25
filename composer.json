@@ -9,9 +9,9 @@
     "mediawiki/mediawiki-codesniffer": "34.0.0"
   },
   "scripts": {
-		"test": [
-			"phpcs -p -s"
-		],
-		"fix": "phpcbf"
-	}
+    "test": [
+      "phpcs -p -s"
+    ],
+    "fix": "phpcbf"
+  }
 }
