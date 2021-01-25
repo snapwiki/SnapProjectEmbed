@@ -1,7 +1,7 @@
 {
-    "name": "mediawiki/snapprojectembed",
-	"type": "mediawiki-extension",   
-	"description": "A MediaWiki extension for embedding Snap! projects",
-	"homepage": "https://www.mediawiki.org/wiki/Extension:Snap!_Project_Embed",
-	"license" : "GPL-3.0+"
+  "name": "mediawiki/snapprojectembed",
+  "type": "mediawiki-extension",
+  "description": "A MediaWiki extension for embedding Snap! projects",
+  "homepage": "https://www.mediawiki.org/wiki/Extension:Snap!_Project_Embed",
+  "license": "GPL-3.0+"
 }
