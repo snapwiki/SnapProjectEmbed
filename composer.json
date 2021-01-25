@@ -5,6 +5,13 @@
   "homepage": "https://www.mediawiki.org/wiki/Extension:Snap!_Project_Embed",
   "license": "GPL-3.0+",
   "require-dev": {
-    "mediawiki/mediawiki-phan-config": "^0.10.6"
-  }
+    "mediawiki/mediawiki-phan-config": "^0.10.6",
+    "mediawiki/mediawiki-codesniffer": "34.0.0"
+  },
+  "scripts": {
+		"test": [
+			"phpcs -p -s"
+		],
+		"fix": "phpcbf"
+	}
 }
