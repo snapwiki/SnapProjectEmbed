@@ -17,7 +17,7 @@ A MediaWiki extension for embedding Snap! projects
   `<snap project="project-name" user="user" edit="false" />`
 - Loading a project without the pause button (defaults to true):
   `<snap project="project-name" user="user" pause="false" />`
-- Loading a project inside a HTML details tag to make it visible only after an arrow has been clicked    (defaults to false):
+- Loading a project inside a HTML details tag to make it visible only after an arrow has been clicked (defaults to false):
   `<snap project="project-name" user="user" hide="true" />
 
 You can also use the extension like this- `<snap project="project-name" user="user"></snap>`. Additionally, instead of using the `<snap>` tag, you can also use the `<snap-project>` tag.
