@@ -36,7 +36,7 @@ class EmbedSnap{
 		$edit = '';
 		$taa = '';
 		$pause = '';
-		$hide = 'false';
+		$hide = '';
 		$elementtorender = '';
 	
 		if ( !empty( $argv['project'])) { // Arguments passed to the parser
@@ -105,7 +105,7 @@ class EmbedSnap{
         
 		$iframe = Html::element( 'iframe', [
 			'class' => 'snap-project',
-                        'allowfullscreen',
+			'allowfullscreen',
 			'allow' => 'geolocation; microphone; camera',
 			'frameborder' => '0',
 			'allowtransparency' => 'true',
