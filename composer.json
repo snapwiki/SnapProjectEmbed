@@ -12,7 +12,8 @@
   },
   "scripts": {
     "test": [
-      "phpcs -p -s"
+      "phpcs -p -s",
+      "parallel-lint . --exclude vendor --exclude node_modules"
     ],
     "fix": "phpcbf"
   }
