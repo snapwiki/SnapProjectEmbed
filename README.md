@@ -80,3 +80,4 @@ The current version of Snap! Project Embed is 2.0.0. If you would like to use an
 
 1.1.0: v1.1
 2.0.0: v2
+2.1.0: v2.1
