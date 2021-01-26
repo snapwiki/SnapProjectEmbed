@@ -8,9 +8,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-     - uses: MilesChou/composer-action@master
-        with:
-           args: install
-           args: test
+    - uses: MilesChou/composer-action@master
+      with:
+           args: install && test
       env:
         CI: true
