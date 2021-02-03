@@ -108,7 +108,7 @@ class EmbedSnap {
 			'allowtransparency' => 'true',
 			'width' => $width,
 			'height' => $height,
-			'src' => 'https://snap.berkeley.edu/embed?project=' . $project . '&user=' . $user . '&showTitle=' . $taa . '&showAuthor=' . $taa . '&editButton=' . $edit . '&pauseButton=' . $pause,
+			'src' => 'https://snap.berkeley.edu/embed?project=' . $project . '&user=' . $user . '&showTitle=' . $taa . '&showAuthor=' . $taa . '&editButton=' . $edit . '&pauseButton=' . $pause . '&noExitWarning',
 		] );
 
 		if ( $hide == 'true' ) {
