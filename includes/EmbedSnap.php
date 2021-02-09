@@ -20,16 +20,17 @@
 if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'Snap! Project Embed requires MediaWiki 1.35 or later to run.' );
 }
+
 class EmbedSnap {
-	// Register <snap> and <snap-project> tags
+	/** Register <snap> and <snap-project> tags */ 
 	public static function parserEmbedSnap( &$parser ) {
 		$parser->setHook( 'snap', [ __CLASS__,'renderEmbedSnap' ] );
 		$parser->setHook( 'snap-project', [ __CLASS__,'renderEmbedSnap' ] );
 		return true;
 	}
 
+	/** Function to render the iframes for the <snap> tags */
 	public static function renderEmbedSnap( $input, $argv, $parser ) {
- // Function to render the iframes for the <snap> tags
 		$project = '';
 		$user = '';
 		$width = $width_max = 930;
@@ -39,8 +40,9 @@ class EmbedSnap {
 		$pause = '';
 		$hide = '';
 		$elementtorender = '';
-
-		if ( !empty( $argv['project'] ) ) { // Arguments passed to the parser
+		
+		// Arguments passed to the parser
+		if ( !empty( $argv['project'] ) ) { 
 			$project = $argv['project'];
 		} elseif ( !empty( $input ) ) {
 			$project = $input;
@@ -118,7 +120,8 @@ class EmbedSnap {
 		}
 		if ( !empty( $project ) ) {
 			if ( !empty( $user ) ) {
-			return ( // If both user and project values are given, it renders the proper iframe.
+			return ( 
+				// If both user and project values are given, it renders the proper iframe.
 				$elementtorender
 			);
 			} else {
