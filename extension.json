@@ -10,8 +10,6 @@
   "AutoloadClasses": {
     "EmbedSnap": "includes/EmbedSnap.php"
   },
-  "ContentHandlers": {},
-  "ExtensionMessagesFiles": {},
   "Hooks": {
     "ParserFirstCallInit": ["EmbedSnap::parserEmbedSnap"]
   },
