@@ -6,7 +6,6 @@
   "descriptionmsg": "embedsnap-desc",
   "license-name": "GPLv3",
   "type": "parserhook",
-  "namespaces": [],
   "AutoloadClasses": {
     "EmbedSnap": "includes/EmbedSnap.php"
   },
