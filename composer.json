@@ -17,6 +17,9 @@
       "phpcs -p -s",
       "minus-x check ."
     ],
-    "fix": "phpcbf"
+    "fix": [
+      "phpcbf",
+      "minus-x fix ."
+    ]
   }
 }
