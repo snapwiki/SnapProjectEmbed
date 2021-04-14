@@ -6,6 +6,9 @@
   "descriptionmsg": "embedsnap-desc",
   "license-name": "GPLv3",
   "type": "parserhook",
+  "requires": {
+    "MediaWiki": ">= 1.25.0"
+  },
   "AutoloadClasses": {
     "EmbedSnap": "includes/EmbedSnap.php"
   },
