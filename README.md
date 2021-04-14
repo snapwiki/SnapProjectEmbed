@@ -26,13 +26,18 @@ You can also use the extension like this- `<snap project="project-name" user="us
 
 ```bash
 .
+└── 📂 .github GitHub Workflows - Safe to delete
+    └── 📜 dependabot.yml # Dependabot configuration
+    └── 📂 workflows
+        └── 📜 ci.yml # Continous Integration configuration
 └── 📂 i18n # Translations for extension
     └── 📜 en.json # English translation and strings
     └── 📜 bn.json # Bengali translation and strings
     └── 📜 it.json # Italian translation and strings
     └── 📜 eo.json #  Esperanto translation and strings
+└── 📂 includes # PHP Code that power the extension
+    └── 📜 EmbedSnap.php # Main extension parser
 └── 📜 extension.json # Extension manifest
-└── 📜 EmbedSnap.php # Main extension parser
 ```
 
 # Installation
