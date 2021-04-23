@@ -59,7 +59,7 @@ A big thank you to mw-embedScratch contributors which was our design inspiration
 
 SnapProjectEmbed - A MediaWiki extension that allows embedding Snap! projects.
 
-Copyright (C) 2020 R4356th and GrahamSH
+Copyright (C) 2020-2021 R4356th and GrahamSH
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
