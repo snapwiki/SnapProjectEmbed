@@ -77,10 +77,5 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 # Old Versions
 
 The current version of Snap! Project Embed is 2.5.3. If you would like to use an older version, please switch to its respective branch-
-
-* 1.1.0: v1.1
-* 2.0.0: v2
-* 2.1.0: v2.1.0
-* 2.5.0: v2.5.0
-* 2.5.1: v2.5.1
-* 2.5.2: v2.5.2
+* v1: v1
+* v2: v2
