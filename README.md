@@ -30,14 +30,22 @@ You can also use the extension like this- `<snap project="project-name" user="us
     └── 📜 dependabot.yml # Dependabot configuration
     └── 📂 workflows
         └── 📜 ci.yml # Continous Integration configuration
+└── 📂 .phan Phan configuration directory - Safe to delete
+    └── 📜 config.php # Phan configuration file
 └── 📂 i18n # Translations for extension
-    └── 📜 en.json # English translation and strings
-    └── 📜 bn.json # Bengali translation and strings
-    └── 📜 it.json # Italian translation and strings
-    └── 📜 eo.json #  Esperanto translation and strings
-└── 📂 includes # PHP Code that power the extension
-    └── 📜 EmbedSnap.php # Main extension parser
+    └── 📜 bn.json # Bengali translation
+    └── 📜 en.json # English translation
+    └── 📜 eo.json # Esperanto translation
+    └── 📜 it.json # Italian translation
+└── 📂 includes # PHP code that power the extension
+    └── 📜 EmbedSnap.php # Main extension file - The most important file of all!
+└── 📜 .gitignore # Lists files that Git should ignore
+└── 📜 LICENSE # License file
+└── 📜 README.md # The file you are reading right now!
+└── 📜 composer.json # Lists all Composer dependencies - Safe to delete
+└── 📜 composer.lock # Lock file for Composer - Safe to delete
 └── 📜 extension.json # Extension manifest
+└── 📜 phpcs.xml # PHP CodeSniffer configuration - Safe to delete
 ```
 
 # Installation
