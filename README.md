@@ -53,7 +53,7 @@ wfLoadExtension( 'SnapProjectEmbed' );
 
 # Credits
 
-A big thank you to mw-embedScratch contributors which was our design inspiration.
+A big thank you to mw-embedScratch contributors which was our original design inspiration.
 
 # Legal
 
