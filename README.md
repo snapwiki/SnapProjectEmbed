@@ -27,11 +27,11 @@ You can also use the extension like this- `<snap project="project-name" user="us
 
 ```bash
 .
-└── 📂 .github GitHub Workflows - Safe to delete
+└── 📂 .github # GitHub Configuration - Safe to delete
     └── 📜 dependabot.yml # Dependabot configuration
-    └── 📂 workflows
+    └── 📂 workflows # GitHub Workflows
         └── 📜 ci.yml # Continous Integration configuration
-└── 📂 .phan Phan configuration directory - Safe to delete
+└── 📂 .phan # Phan configuration directory - Safe to delete
     └── 📜 config.php # Phan configuration file
 └── 📂 i18n # Translations for extension
     └── 📜 bn.json # Bengali translation
