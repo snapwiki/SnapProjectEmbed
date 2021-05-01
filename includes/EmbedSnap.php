@@ -129,7 +129,7 @@ class EmbedSnap {
 				return Html::element( 'p', [
 					'style' => '"color: red;"',
 					],
-					wfMessage( 'error-username' )->text();
+					wfMessage( 'error-username' )->text()
 						     );
 			}
 		} else {
@@ -137,8 +137,8 @@ class EmbedSnap {
 			return Html::element( 'p', [
 					'style' => '"color: red;"',
 					],
-					wfMessage( 'error-project' )->text();
-						     ));
+					wfMessage( 'error-project' )->text()
+						     );
 		}
 	}
 }
