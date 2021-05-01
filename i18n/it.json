@@ -3,6 +3,6 @@
     "author": "RubenVerg"
   },
   "embedsnap-desc": "Inserisci progetti Snap!",
-  "error-project": "<p style=\"color:red;\">Errore: Manca il nome del progetto</p>",
-  "error-username": "<p style=\"color:red;\">Errore: Manca il nome utente</p>"
+  "error-project": "Errore: Manca il nome del progetto",
+  "error-username": "Errore: Manca il nome utente"
 }
