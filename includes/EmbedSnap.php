@@ -138,7 +138,7 @@ class EmbedSnap {
 					'style' => '"color: red;"',
 					],
 					wfMessage( 'error-project' )->text();
-						     );
+						     ));
 		}
 	}
 }
