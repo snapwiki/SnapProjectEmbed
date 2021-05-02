@@ -17,6 +17,7 @@
       "phpcs -p -s",
       "minus-x check ."
     ],
+    "phan": "phan -d . --long-progress-bar --allow-polyfill-parser",
     "fix": [
       "phpcbf",
       "minus-x fix ."
