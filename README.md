@@ -1,6 +1,7 @@
 [![Build Status](https://img.shields.io/github/workflow/status/snapwiki/SnapProjectEmbed/Check%20PHP?style=flat-square)](https://github.com/snapwiki/SnapProjectEmbed/actions)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
+*:warning: This branch is unsuitable for use in production. You should switch to the "stable" branch for production wikis.*
 # Snap! Project Embed
 
 A MediaWiki extension for embedding Snap! projects
@@ -26,13 +27,26 @@ You can also use the extension like this- `<snap project="project-name" user="us
 
 ```bash
 .
+└── 📂 .github # GitHub Configuration - Safe to delete
+    └── 📜 dependabot.yml # Dependabot configuration
+    └── 📂 workflows # GitHub Workflows
+        └── 📜 ci.yml # Continous Integration configuration
+└── 📂 .phan # Phan configuration directory - Safe to delete
+    └── 📜 config.php # Phan configuration file
 └── 📂 i18n # Translations for extension
-    └── 📜 en.json # English translation and strings
-    └── 📜 bn.json # Bengali translation and strings
-    └── 📜 it.json # Italian translation and strings
-    └── 📜 eo.json #  Esperanto translation and strings
+    └── 📜 bn.json # Bengali translation
+    └── 📜 en.json # English translation
+    └── 📜 eo.json # Esperanto translation
+    └── 📜 it.json # Italian translation
+└── 📂 includes # PHP code that power the extension
+    └── 📜 EmbedSnap.php # Main extension file - The most important file of all!
+└── 📜 .gitignore # Lists files that Git should ignore
+└── 📜 LICENSE # License file
+└── 📜 README.md # The file you are reading right now!
+└── 📜 composer.json # Lists all Composer dependencies - Safe to delete
+└── 📜 composer.lock # Lock file for Composer - Safe to delete
 └── 📜 extension.json # Extension manifest
-└── 📜 EmbedSnap.php # Main extension parser
+└── 📜 phpcs.xml # PHP CodeSniffer configuration - Safe to delete
 ```
 
 # Installation
@@ -76,11 +90,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 # Old Versions
 
-The current version of Snap! Project Embed is 2.5.3. If you would like to use an older version, please switch to its respective branch-
-
-* 1.1.0: v1.1
-* 2.0.0: v2
-* 2.1.0: v2.1.0
-* 2.5.0: v2.5.0
-* 2.5.1: v2.5.1
-* 2.5.2: v2.5.2
+The current version of Snap! Project Embed is 2.6.0. If you would like to use an older version, please switch to its respective branch-
+* v1: v1
+* v2: v2

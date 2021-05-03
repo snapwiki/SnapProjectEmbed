@@ -3,6 +3,6 @@
     "autor": "DarDoro"
   },
   "embedsnap-desc": "Osadzanie projektu Snap!",
-  "error-project": "<p style=\"color:red;\">Błąd: brak nazwy projektu</p>",
-  "error-username": "<p style=\"color:red;\">Błąd: brak nazwy użytkownika</p>"
+  "error-project": "Błąd: brak nazwy projektu",
+  "error-username": "Błąd: brak nazwy użytkownika"
 }

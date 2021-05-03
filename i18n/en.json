@@ -1,8 +1,8 @@
 {
   "@metadata": {
-    "author": "R4356th, GrahamSH, mw-embedScratch contributors"
+    "author": "R4356th, GrahamSH"
   },
   "embedsnap-desc": "Embed Snap! projects",
-  "error-project": "<p style=\"color:red;\">Error: Project Name Missing</p>",
-  "error-username": "<p style=\"color:red;\">Error: Username Missing</p>"
+  "error-project": "Error: Project Name Missing",
+  "error-username": "Error: Username Missing"
 }
