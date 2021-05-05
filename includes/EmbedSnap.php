@@ -126,11 +126,11 @@ class EmbedSnap {
 			);
 			} else {
 				// If the user value is empty it can't render the iframe and returns an error instead.
-				return Html::errorBox( wfMessage( 'error-username' )->text() );
+				return Html::errorBox( wfMessage( 'error-username' )->escaped() );
 			}
 		} else {
 			// If the project value is empty, then it also can't render the iframe and returns an error instead.
-			return Html::errorBox( wfMessage( 'error-project' )->text() );
+			return Html::errorBox( wfMessage( 'error-project' )->escaped() );
 		}
 	}
 }
