@@ -3,6 +3,6 @@
     "author": "RubenVerg"
   },
   "embedsnap-desc": "Enigu Snap!-ajn projektojn",
-  "error-project": "<p style=\"color:red;\">Eraro: Projekta-Nomo Mankas</p>",
-  "error-username": "<p style=\"color:red;\">Eraro: Uzantnomo Mankas</p>"
+  "error-project": "Eraro: Projekta-Nomo Mankas",
+  "error-username": "Eraro: Uzantnomo Mankas"
 }
