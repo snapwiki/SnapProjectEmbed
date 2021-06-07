@@ -26,7 +26,6 @@ class EmbedSnap {
 	public static function parserEmbedSnap( &$parser ) {
 		$parser->setHook( 'snap', [ __CLASS__,'renderEmbedSnap' ] );
 		$parser->setHook( 'snap-project', [ __CLASS__,'renderEmbedSnap' ] );
-		return true;
 	}
 
 	/** Function to render the iframes for the <snap> tags */
