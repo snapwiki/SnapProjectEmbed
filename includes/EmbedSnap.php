@@ -110,6 +110,7 @@ class EmbedSnap {
 			'width' => $width,
 			'height' => $height,
 			'src' => 'https://snap.berkeley.edu/embed?project=' . $project . '&user=' . $user . '&showTitle=' . $taa . '&showAuthor=' . $taa . '&editButton=' . $edit . '&pauseButton=' . $pause . '&noExitWarning',
+			'loading' => 'lazy',
 		] );
 
 		if ( $hide == 'true' ) {
