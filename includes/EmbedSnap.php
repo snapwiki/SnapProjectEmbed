@@ -17,19 +17,21 @@
 	Embedding Snap! projects in MediaWiki using <snap> and <snap-project> tags
 */
 
+use MediaWiki\Hook\ParserFirstCallInitHook;
+
 if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'Snap! Project Embed requires MediaWiki 1.35 or later to run.' );
 }
 
-class EmbedSnap {
+class EmbedSnap implements ParserFirstCallInitHook {
 	/** Register <snap> and <snap-project> tags */ 
-	public static function parserEmbedSnap( &$parser ) {
+	public function onParserFirstCallInit( $parser ) {
 		$parser->setHook( 'snap', [ __CLASS__,'renderEmbedSnap' ] );
 		$parser->setHook( 'snap-project', [ __CLASS__,'renderEmbedSnap' ] );
 	}
 
 	/** Function to render the iframes for the <snap> tags */
-	public static function renderEmbedSnap( $input, $argv, $parser ) {
+	public function renderEmbedSnap( $input, $argv, $parser ) {
 		$project = '';
 		$user = '';
 		$width = $width_max = 930;
