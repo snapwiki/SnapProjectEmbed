@@ -1,27 +1,31 @@
 {
-  "name": "Snap! Project Embed",
-  "version": "3.0.0",
-  "author": ["R4356th, GrahamSH, mw-EmbedScratch contributors"],
-  "url": "https://www.mediawiki.org/wiki/Extension:SnapProjectEmbed",
-  "descriptionmsg": "embedsnap-desc",
-  "license-name": "GPLv3",
-  "type": "parserhook",
-  "requires": {
-    "MediaWiki": ">=1.35.0"
-  },
-  "AutoloadClasses": {
-    "EmbedSnap": "EmbedSnap.php"
-  },
-  "HookHandlers": {
-    "default": {
-      "class": "EmbedSnap"
-    }
-  },
-  "Hooks": {
-    "ParserFirstCallInit": "default"
-  },
-  "MessagesDirs": {
-    "EmbedSnap": ["i18n"]
-  },
-  "manifest_version": 1
+	"name": "Snap! Project Embed",
+	"version": "3.0.0",
+	"author": [
+		"R4356th, GrahamSH, mw-EmbedScratch contributors"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:SnapProjectEmbed",
+	"descriptionmsg": "embedsnap-desc",
+	"license-name": "GPLv3",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">=1.35.0"
+	},
+	"AutoloadClasses": {
+		"EmbedSnap": "includes/EmbedSnap.php"
+	},
+	"HookHandlers": {
+		"default": {
+			"class": "EmbedSnap"
+		}
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "default"
+	},
+	"MessagesDirs": {
+		"EmbedSnap": [
+			"i18n"
+		]
+	},
+	"manifest_version": 2
 }
