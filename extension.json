@@ -12,7 +12,7 @@
 		"MediaWiki": ">=1.35.0"
 	},
 	"AutoloadClasses": {
-		"EmbedSnap": "includes/EmbedSnap.php"
+		"EmbedSnap": "EmbedSnap.php"
 	},
 	"HookHandlers": {
 		"default": {
