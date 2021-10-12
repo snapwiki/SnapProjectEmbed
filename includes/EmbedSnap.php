@@ -31,7 +31,7 @@ class EmbedSnap implements ParserFirstCallInitHook {
 	}
 
 	/** Function to render the iframes for the <snap> tags */
-	public function renderEmbedSnap( $input, $argv, $parser ) {
+	public static function renderEmbedSnap( $input, $argv, $parser ) {
 		$project = '';
 		$user = '';
 		$width = $width_max = 930;
