@@ -105,7 +105,7 @@ class EmbedSnap implements ParserFirstCallInitHook {
 
 		$iframe = Html::element( 'iframe', [
 			'class' => 'snap-project',
-			'allowfullscreen',
+			'allowfullscreen' => 'true',
 			'allow' => 'geolocation; microphone; camera',
 			'frameborder' => '0',
 			'allowtransparency' => 'true',
