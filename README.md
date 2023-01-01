@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/github/workflow/status/snapwiki/SnapProjectEmbed/Check%20PHP?style=flat-square)](https://github.com/snapwiki/SnapProjectEmbed/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/snapwiki/SnapProjectEmbed/ci.yml?branch=main&style=flat-square)](https://github.com/snapwiki/SnapProjectEmbed/actions)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 *:warning: This branch is unsuitable for use in production. You should switch to the "stable" branch for production wikis.*
