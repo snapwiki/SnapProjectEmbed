@@ -9,7 +9,7 @@
 	"license-name": "GPLv3",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">=1.35.0"
+		"MediaWiki": ">=1.40.0"
 	},
 	"AutoloadClasses": {
 		"EmbedSnap": "includes/EmbedSnap.php"
