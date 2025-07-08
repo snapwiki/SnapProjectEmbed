@@ -117,7 +117,11 @@ class EmbedSnap implements ParserFirstCallInitHook {
 		] );
 
 		if ( $hide == 'true' ) {
-			$elementtorender = Html::openElement( 'details' ) . Html::openElement( 'summary' ) . Html::closeElement( 'summary' ) . $iframe . Html::closeElement( 'details' );
+			$elementtorender = Html::rawElement(
+				'details',
+				[],
+				Html::element( 'summary' ) . $iframe
+			);
 		} elseif ( $hide == 'false' ) {
 			$elementtorender = $iframe;
 		}
