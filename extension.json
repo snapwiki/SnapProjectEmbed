@@ -1,8 +1,8 @@
 {
 	"name": "Snap! Project Embed",
-	"version": "3.2.0",
+	"version": "4.0.0",
 	"author": [
-		"R4356th, GrahamSH, mw-EmbedScratch contributors"
+		"Radman Siddiki, GrahamSH, mw-EmbedScratch contributors"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:SnapProjectEmbed",
 	"descriptionmsg": "embedsnap-desc",
