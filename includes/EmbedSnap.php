@@ -18,13 +18,14 @@
 */
 
 use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Html\Html;
 
 if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'Snap! Project Embed requires MediaWiki 1.35 or later to run.' );
 }
 
 class EmbedSnap implements ParserFirstCallInitHook {
-	/** Register <snap> and <snap-project> tags */ 
+	/** Register <snap> and <snap-project> tags */
 	public function onParserFirstCallInit( $parser ) {
 		$parser->setHook( 'snap', [ __CLASS__,'renderEmbedSnap' ] );
 		$parser->setHook( 'snap-project', [ __CLASS__,'renderEmbedSnap' ] );
@@ -41,9 +42,9 @@ class EmbedSnap implements ParserFirstCallInitHook {
 		$pause = '';
 		$hide = '';
 		$elementtorender = '';
-		
+
 		// Arguments passed to the parser
-		if ( !empty( $argv['project'] ) ) { 
+		if ( !empty( $argv['project'] ) ) {
 			$project = $argv['project'];
 		} elseif ( !empty( $input ) ) {
 			$project = $input;
@@ -116,13 +117,17 @@ class EmbedSnap implements ParserFirstCallInitHook {
 		] );
 
 		if ( $hide == 'true' ) {
-			$elementtorender = Html::openElement( 'details' ) . Html::openElement( 'summary' ) . Html::closeElement( 'summary' ) . $iframe . Html::closeElement( 'details' );
+			$elementtorender = Html::rawElement(
+				'details',
+				[],
+				Html::element( 'summary' ) . $iframe
+			);
 		} elseif ( $hide == 'false' ) {
 			$elementtorender = $iframe;
 		}
 		if ( !empty( $project ) ) {
 			if ( !empty( $user ) ) {
-			return ( 
+			return (
 				// If both user and project values are given, it renders the proper iframe.
 				$elementtorender
 			);
