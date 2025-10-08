@@ -1,6 +1,7 @@
 {
   "@metadata": {
-    "author": "R4356th, GrahamSH"
+    "authors": 
+    ["Radman Siddiki", "GrahamSH"]
   },
   "embedsnap-desc": "Embed Snap! projects",
   "error-project": "Error: Project Name Missing",
