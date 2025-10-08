@@ -3,14 +3,11 @@ name: Continuous Integration
 on: [push, pull_request]
 
 jobs:
-  build:
+  ci:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - uses: MilesChou/composer-action/8.2@master
-      with:
-           args: config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer false
     - uses: MilesChou/composer-action/8.2@master
       with:
            args: install
