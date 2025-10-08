@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: MilesChou/composer-action/8.2@master
       with:
-           args: config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer
+           args: config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer false
     - uses: MilesChou/composer-action/8.2@master
       with:
            args: install
